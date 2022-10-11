@@ -1,0 +1,220 @@
+[
+	{
+		"type": "mutation",
+		"id": "MANACORE1",
+		"name": "Mana Core - Red",
+		"points": 1,
+		"description": "Red Mana Cores are the most common Mana Core. Gives no benefits when learning the arcane arts.",
+		"valid": false,
+		"purifiable": false,
+		"player_display": true,
+		"active": true,
+		"mana_multiplier": 1,
+		"enchantments": [ "MANACORE1_BUFF" ],
+		"spells_learned": [ [ "generate_mana", 1 ] ],
+		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
+	},
+	
+	{
+		"type": "mutation",
+		"id": "MANACORE1CRACKED",
+		"name": "Mana Core - Cracked Red",
+		"points": 1,
+		"description": "A Cracked Mana Core that has shattered under immense impurities.",
+		"valid": false,
+		"purifiable": false,
+		"player_display": true,
+		"mana_multiplier": 0.5
+	},
+	
+	{
+		"type": "mutation",
+		"id": "MANACORE2",
+		"name": "Mana Core - Orange",
+		"points": 2,
+		"description": "Orange Mana Cores give slight benefits in regards to the arcane arts.",
+		"valid": false,
+		"purifiable": false,
+		"player_display": true,
+		"active": true,
+		"mana_multiplier": 1.1,
+		"enchantments": [ "MANACORE2_BUFF" ],
+		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
+	},
+	
+	{
+		"type": "mutation",
+		"id": "MANACORE2CRACKED",
+		"name": "Mana Core - Cracked Orange",
+		"points": 2,
+		"description": "A Cracked Mana Core that has shattered under immense impurities.",
+		"valid": false,
+		"purifiable": false,
+		"player_display": true,
+		"mana_multiplier": 0.55
+	},
+	
+	{
+		"type": "mutation",
+		"id": "MANACORE3",
+		"name": "Mana Core - Yellow",
+		"points": 4,
+		"description": "Yellow Mana Cores allow for greater control over mana as well as allowing more storage than normal mages.",
+		"valid": false,
+		"purifiable": false,
+		"player_display": true,
+		"active": true,
+		"mana_multiplier": 1.25,
+		"enchantments": [ "MANACORE3_BUFF" ],
+		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
+	},
+	
+	{
+		"type": "mutation",
+		"id": "MANACORE3CRACKED",
+		"name": "Mana Core - Cracked Yellow",
+		"points": 4,
+		"description": "A Cracked Mana Core that has shattered under immense impurities.",
+		"valid": false,
+		"purifiable": false,
+		"player_display": true,
+		"mana_multiplier": 0.625
+	},
+	
+	{
+		"type": "mutation",
+		"id": "MANACORE4",
+		"name": "Mana Core - Green",
+		"points": 6,
+		"description": "Green Mana Cores enable the ability to control their abilities to a degree that is a magnitude up from the previous cores.",
+		"valid": false,
+		"purifiable": false,
+		"player_display": true,
+		"active": true,
+		"mana_multiplier": 1.4,
+		"enchantments": [ "MANACORE4_BUFF" ],
+		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
+	},
+	
+	{
+		"type": "mutation",
+		"id": "MANACORE4CRACKED",
+		"name": "Mana Core - Cracked Green",
+		"points": 6,
+		"description": "A Cracked Mana Core that has shattered under immense impurities.",
+		"valid": false,
+		"purifiable": false,
+		"player_display": true,
+		"mana_multiplier": 0.7
+	},
+	
+	{
+		"type": "mutation",
+		"id": "MANACORE5",
+		"name": "Mana Core - Cyan",
+		"points": 8,
+		"description": "Cyan Mana Cores have their existing abilities enhanced. Many successful mages have such a core.",
+		"valid": false,
+		"purifiable": false,
+		"player_display": true,
+		"active": true,
+		"mana_multiplier": 1.65,
+		"flags": [ "SILENT_SPELL" ],
+		"enchantments": [ "MANACORE5_BUFF" ],
+		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
+	},
+	
+	{
+		"type": "mutation",
+		"id": "MANACORE5CRACKED",
+		"name": "Mana Core - Cracked Cyan",
+		"points": 8,
+		"description": "A Cracked Mana Core that has shattered under immense impurities.",
+		"valid": false,
+		"purifiable": false,
+		"player_display": true,
+		"mana_multiplier": 0.825
+	},
+	
+	{
+		"type": "mutation",
+		"id": "MANACORE6",
+		"name": "Mana Core - Blue",
+		"points": 10,
+		"description": "Blue Mana Cores are those that the majority of great mages have. A major upgrade that sets them apart is the fine control of their abilities.",
+		"valid": false,
+		"purifiable": false,
+		"player_display": true,
+		"active": true,
+		"mana_multiplier": 2,
+		"flags": [ "SILENT_SPELL" ],
+		"enchantments": [ "MANACORE6_BUFF" ],
+		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
+	},
+	
+	{
+		"type": "mutation",
+		"id": "MANACORE6CRACKED",
+		"name": "Mana Core - Cracked Blue",
+		"points": 10,
+		"description": "A Cracked Mana Core that has shattered under immense impurities.",
+		"valid": false,
+		"purifiable": false,
+		"player_display": true,
+		"mana_multiplier": 1
+	},
+	
+	{
+		"type": "mutation",
+		"id": "MANACORE7",
+		"name": "Mana Core - Purple",
+		"points": 16,
+		"description": "Purple Mana Cores are those that Archmages and Sages have. Their abilities are far greater than the previous core. Considered the limit by the Magic World.",
+		"valid": false,
+		"purifiable": false,
+		"player_display": true,
+		"active": true,
+		"mana_multiplier": 4,
+		"flags": [ "SILENT_SPELL", "SUBTLE_SPELL" ],
+		"enchantments": [ "MANACORE7_BUFF" ],
+		"activated_eocs": [ "ATTEMPT_FINAL_BREAKTHROUGH" ]
+	},
+	
+	{
+		"type": "mutation",
+		"id": "MANACORE7CRACKED",
+		"name": "Mana Core - Cracked Purple",
+		"points": 16,
+		"description": "A Cracked Mana Core that has shattered under immense impurities.",
+		"valid": false,
+		"purifiable": false,
+		"player_display": true,
+		"mana_multiplier": 2
+	},
+	
+	{
+		"type": "mutation",
+		"id": "MANACORE8",
+		"name": "Mana Core - White",
+		"points": 20,
+		"description": "White Mana Cores are the stuff of legends. Only mythical beings have such a core and the countless benefits such a core grants.",
+		"valid": false,
+		"purifiable": false,
+		"player_display": true,
+		"mana_multiplier": 8,
+		"flags": [ "SILENT_SPELL", "SUBTLE_SPELL" ],
+		"enchantments": [ "MANACORE8_BUFF" ]
+	},
+	
+	{
+		"type": "mutation",
+		"id": "MANACORE8CRACKED",
+		"name": "Mana Core - Cracked White",
+		"points": 20,
+		"description": "A Cracked Mana Core that has shattered under immense impurities.",
+		"valid": false,
+		"purifiable": false,
+		"player_display": true,
+		"mana_multiplier": 4
+	}
+]

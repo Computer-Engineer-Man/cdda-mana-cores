@@ -1,0 +1,25 @@
+[
+	{
+		"id": "generate_mana",
+		"type": "SPELL",
+		"name": "Generate Mana",
+		"description": "Force your mana core to fill your reserves.",
+		"valid_targets": "self",
+		"effect": "effect_on_condition",
+		"shape": "blast",
+		"flags": [ "NO_PROJECTILE", "NO_HANDS", "NO_LEGS", "SILENT" ],
+		"effect_str": "GENERATE_MANA_EOC"
+	},
+	
+	{
+		"id": "purge_impurities",
+		"type": "SPELL",
+		"name": "Purge Impurities",
+		"description": "A debug spell to remove impurities.",
+		"valid_targets": "self",
+		"effect": "effect_on_condition",
+		"shape": "blast",
+		"flags": [ "NO_PROJECTILE", "NO_HANDS", "NO_LEGS", "SILENT" ],
+		"effect_str": "PURGE_IMPURITIES"
+	}
+]

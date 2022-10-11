@@ -1,0 +1,12 @@
+[
+	{
+	"id": "impurities",
+	"type": "vitamin",
+	"vit_type": "counter",
+	"name": "Impurities",
+	"rate": "15 m",
+	"min": 0,
+	"max": 50000,
+	"flags": [ "NO_DISPLAY" ]
+	}
+]
