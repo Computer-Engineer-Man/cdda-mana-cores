@@ -1,5 +1,5 @@
 # Mana Cores Mod
-Adds Mana Cores mod for Cataclysm: Dark Days Ahead.
+Adds Mana Cores mod for Cataclysm: Dark Days Ahead. The mod should be used in the experimental version of the game.
 ## What are Mana Cores?
 Well, Mana Cores come in 8 flavors. Red, Orange, Yellow, Green, Cyan, Blue, Purple, and White. Each is more powerful than the last and follows exponential growth at the later stages. Be warned though, for each mana core there is a cracked variant. A mana core cracks when too many impurities are in the core. I intend for the impurities to be hidden and your only sense of if it is a good time to breakthrough is when you get a good feeling about breaking through. 
 ## What do you mean good feeling?
