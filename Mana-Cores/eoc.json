@@ -327,7 +327,6 @@
 		[
 			{ "u_message": "Your mana core suddenly destabilizes and expels impurities!", "type": "bad" },
 			{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "-=", { "arithmetic": [ { "u_val": "var", "var_name": "impurities_soft_cap" }, "/", { "const": 4 } ] } ] },
-			{ "arithmetic": [ { "u_val": "pain" }, "+=", { "const": 100 } ] },
 			{ "arithmetic": [ { "u_val": "focus" }, "-=", { "const": 70 } ] },
 			{ "arithmetic": [ { "u_val": "mana" }, "=", { "const": 0 } ] }
 		]
