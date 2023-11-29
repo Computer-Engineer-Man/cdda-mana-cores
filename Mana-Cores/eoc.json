@@ -24,7 +24,7 @@
 		"effect": 
 		[
 			{ "u_message": "You breakthrough!", "type": "good" },
-			{ "switch": { "u_val": "var", "var_name": "manacoretier" },
+			{ "switch": { "math": [ "u_manacoretier" ] },
 			"cases": 
 			[
 				{
@@ -100,7 +100,7 @@
 		[
 			{ "u_message": "You fail your breakthrough!", "type": "bad"	},
 			{ "u_message": "You feel your mana core vibrate!", "type": "bad" },
-			{ "switch": { "u_val": "var", "var_name": "manacoretier" },
+			{ "switch": { "math": [ "u_manacoretier" ] },
 			"cases":
 			[		
 				{
