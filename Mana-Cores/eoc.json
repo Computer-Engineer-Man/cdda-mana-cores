@@ -322,7 +322,7 @@
 		"id": "MANA_CORE_SENSATION_VERY_BAD",
 		"//": "Once you are very close to the limit of cracking your mana core every 6 hours a chance to clear out a lot of impurities",
 		"recurrence": "6 hours",
-		"condition": { "and": [ { "not": {"u_has_bionics": "ANY" } }, { "not": { "u_has_effect": "sleep" } }, { "math": [ "u_val('vitamin', 'name: impurities')>=u_impurities_soft_cap*50" ]  }, { "x_in_y_chance": { "x": 1, "y": 3 } } ] },
+		"condition": { "and": [ { "not": {"u_has_bionics": "ANY" } }, { "not": { "u_has_effect": "sleep" } }, { "math": [ "u_val('vitamin', 'name: impurities')>=u_impurities_soft_cap*2" ]  }, { "x_in_y_chance": { "x": 1, "y": 3 } } ] },
 		"effect":
 		[
 			{ "u_message": "Your mana core suddenly destabilizes and expels impurities!", "type": "bad" },
