@@ -4,14 +4,14 @@
 		"id": "GIVE_CORE",
 		"//": "Is the initalization thingy. It makes the stuff, ya know?",
 		"recurrence": 1,
-		"deactivate_condition": { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, "!=", { "const": 0 } ] },
-		"condition": { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 0 } ] },
+		"deactivate_condition": { "math": [ "u_manacoretier != 0" ] },
+		"condition": { "math": [ "u_manacoretier == 0" ] },
 		"effect": [
 			{ "u_add_trait": "MANACORE1" },
 			{ "u_message": "Your mana condenses into a core."},
-			{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "=", { "const": 450 } ] },
-			{ "arithmetic": [ { "u_val": "var", "var_name": "impurities_soft_cap"}, "=", { "const": 500 } ] },
-			{ "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 1 } ] },
+			{ "math": [ "u_val('vitamin', 'name: impurities')", "=", "450" ] },
+			{ "math": [ "u_impurities_soft_cap", "=", "500" ] },
+			{ "math": [ "u_manacoretier", "=", "1" ] },
 			{ "run_eocs": [ "CORE1_DEGRADE_CHECK" ] }
 		]
 	},
@@ -20,77 +20,77 @@
 		"type": "effect_on_condition",
 		"id": "BEGIN_BREAKTHROUGH",
 		"//": "Ensures no bionics, that impurities are low enough, and has a 1 out of 3 chance it succeed",
-		"condition": { "and": [ { "not": {"u_has_bionics": "ANY" } }, { "compare_int": [ { "u_val": "vitamin", "name": "impurities" }, "<=", { "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "*", { "const": 50 } ] } ] }, { "x_in_y_chance": { "x": 1, "y": 3 } } ] },
+		"condition": { "and": [ { "not": {"u_has_bionics": "ANY" } }, { "math": [ "(u_manacoretier*50)<=u_val('vitamin', 'name: impurities')" ]   }, { "x_in_y_chance": { "x": 1, "y": 3 } } ] },
 		"effect": 
 		[
 			{ "u_message": "You breakthrough!", "type": "good" },
-			{ "switch": { "u_val": "var", "var_name": "manacoretier" },
+			{ "switch": { "u_val": "var", "var_name": "u_manacoretier" },
 			"cases": 
 			[
 				{
 				"case": 1,
 				"effect": [
-					{ "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 2 } ] },
+					{ "math": [ "u_manacoretier", "=", "2" ] },
 					{ "u_add_trait": "MANACORE2" },
 					{ "u_lose_trait": "MANACORE1" },
 					{ "run_eocs": [ "CORE2_DEGRADE_CHECK" ] },
-					{ "arithmetic": [ { "u_val": "var", "var_name": "impurities_soft_cap"}, "=", { "const": 750 } ] },
-					{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "=", { "const": 675 } ] }
+					{ "math": [ "u_impurities_soft_cap", "=", "750" ] },
+					{ "math": [ "u_val('vitamin', 'name: impurities')", "=", "675" ] }
 					]
 				},
 				{
 				"case": 2,
 				"effect": [
-					{ "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 3 } ] },
+					{ "math": [ "u_manacoretier", "=", "3" ] },
 					{ "u_add_trait": "MANACORE3" },
 					{ "u_lose_trait": "MANACORE2" },
 					{ "run_eocs": [ "CORE3_DEGRADE_CHECK" ] },
-					{ "arithmetic": [ { "u_val": "var", "var_name": "impurities_soft_cap"}, "=", { "const": 1000 } ] },
-					{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "=", { "const": 900 } ] }
+					{ "math": [ "u_impurities_soft_cap", "=", "1000" ] },
+					{ "math": [ "u_val('vitamin', 'name: impurities')", "=", "900" ] }
 					]
 				},
 				{
 				"case": 3,
 				"effect": [
-					{ "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 4 } ] },
+					{ "math": [ "u_manacoretier", "=", "4" ] },
 					{ "u_add_trait": "MANACORE4" },
 					{ "u_lose_trait": "MANACORE3" },
 					{ "run_eocs": [ "CORE4_DEGRADE_CHECK" ] },
-					{ "arithmetic": [ { "u_val": "var", "var_name": "impurities_soft_cap"}, "=", { "const": 1500 } ] },
-					{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "=", { "const": 1350 } ] }
+					{ "math": [ "u_impurities_soft_cap", "=", "1500" ] },
+					{ "math": [ "u_val('vitamin', 'name: impurities')", "=", "1350" ] }
 					]
 				},
 				{
 				"case": 4,
 				"effect": [
-					{ "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 5 } ] },
+					{ "math": [ "u_manacoretier", "=", "5" ] },
 					{ "u_add_trait": "MANACORE5" },
 					{ "u_lose_trait": "MANACORE4" },
 					{ "run_eocs": [ "CORE5_DEGRADE_CHECK" ] },
-					{ "arithmetic": [ { "u_val": "var", "var_name": "impurities_soft_cap"}, "=", { "const": 2000 } ] },
-					{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "=", { "const": 1800 } ] }
+					{ "math": [ "u_impurities_soft_cap", "=", "2000" ] },
+					{ "math": [ "u_val('vitamin', 'name: impurities')", "=", "1800" ] }
 					]
 				},
 				{
 				"case": 5,
 				"effect": [
-					{ "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 6 } ] },
+					{ "math": [ "u_manacoretier", "=", "6" ] },
 					{ "u_add_trait": "MANACORE6" },
 					{ "u_lose_trait": "MANACORE5" },
 					{ "run_eocs": [ "CORE6_DEGRADE_CHECK" ] },
-					{ "arithmetic": [ { "u_val": "var", "var_name": "impurities_soft_cap"}, "=", { "const": 3500 } ] },
-					{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "=", { "const": 3150 } ] }
+					{ "math": [ "u_impurities_soft_cap", "=", "3500" ] },
+					{ "math": [ "u_val('vitamin', 'name: impurities')", "=", "3150" ] }
 					]
 				},
 				{
 				"case": 6,
 				"effect": [
-					{ "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 7 } ] },
+					{ "math": [ "u_manacoretier", "=", "7" ] },
 					{ "u_add_trait": "MANACORE7" },
 					{ "u_lose_trait": "MANACORE6" },
 					{ "run_eocs": [ "CORE7_DEGRADE_CHECK" ] },
-					{ "arithmetic": [ { "u_val": "var", "var_name": "impurities_soft_cap"}, "=", { "const": 5000 } ] },
-					{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "=", { "const": 4500 } ] }
+					{ "math": [ "u_impurities_soft_cap", "=", "5000" ] },
+					{ "math": [ "u_val('vitamin', 'name: impurities')", "=", "4500" ] }
 					]
 				}
 			]
@@ -100,43 +100,43 @@
 		[
 			{ "u_message": "You fail your breakthrough!", "type": "bad"	},
 			{ "u_message": "You feel your mana core vibrate!", "type": "bad" },
-			{ "switch": { "u_val": "var", "var_name": "manacoretier" },
+			{ "switch": { "u_val": "var", "var_name": "u_manacoretier" },
 			"cases":
-			[
+			[		
 				{
 				"case": 1,
 				"effect": [
-					{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "+=", { "const": 225 } ] }
+					{ "math": [ "u_val('vitamin', 'name: impurities')", "+=", "225" ] }
 				]
 				},
 				{
 				"case": 2,
 				"effect": [
-					{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "+=", { "const": 338 } ] }
+					{ "math": [ "u_val('vitamin', 'name: impurities')", "+=", "338" ] }
 				]
 				},
 				{
 				"case": 3,
 				"effect": [
-					{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "+=", { "const": 450 } ] }
+					{ "math": [ "u_val('vitamin', 'name: impurities')", "+=", "450" ] }
 				]
 				},
 				{
 				"case": 4,
 				"effect": [
-					{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "+=", { "const": 675 } ] }
+					{ "math": [ "u_val('vitamin', 'name: impurities')", "+=", "675" ] }
 				]
 				},
 				{
 				"case": 5,
 				"effect": [
-					{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "+=", { "const": 900 } ] }
+					{ "math": [ "u_val('vitamin', 'name: impurities')", "+=", "900" ] }
 				]
 				},
 				{
 				"case": 6,
 				"effect": [
-					{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "+=", { "const": 1575 } ] }
+					{ "math": [ "u_val('vitamin', 'name: impurities')", "+=", "1575" ] }
 				]
 				}
 			] }
@@ -147,21 +147,21 @@
 		"type": "effect_on_condition",
 		"id": "ATTEMPT_FINAL_BREAKTHROUGH",
 		"//": "This is the endgame of this mod, similar to regular breakthroughs with the exception of only a 1 in 10 chance",
-		"condition": { "and": [ { "x_in_y_chance": { "x": 1, "y": 10 } }, { "compare_int": [ { "u_val": "vitamin", "name": "impurities" }, "<=", { "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "*", { "const": 50 } ] } ] } ] },
+		"condition": { "and": [ { "x_in_y_chance": { "x": 1, "y": 10 } }, { "math": [ "(u_manacoretier*50)<=u_val('vitamin', 'name: impurities')" ]   } ] },
 		"effect": 
 		[
 			{ "u_message": "You feel as though the world itself is connected to you. You have broken through what many consider the end.", "type": "good" },
-			{ "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 8 } ] },
+			{ "math": [ "u_manacoretier", "=", "8" ] },
 			{ "u_add_trait": "MANACORE8" },
 			{ "u_lose_trait": "MANACORE7" },
-			{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "+=", { "const": 9000 } ] },
-			{ "arithmetic": [ { "u_val": "var", "var_name": "impurities_soft_cap" }, "=", { "const": 10000 } ] },
+			{ "math": [ "u_val('vitamin', 'name: impurities')", "+=", "9000" ] },
+			{ "math": [ "u_impurities_soft_cap", "=", "10000" ] },
 			{ "run_eocs": [ "CORE8_DEGRADE_CHECK" ] }
 		],
 		"false_effect":
 		[
 		{ "u_message": "You fail your breakthrough!", "type": "bad"	},
-		{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "+=", { "const": 2250 } ] }
+		{ "math": [ "u_val('vitamin', 'name: impurities')", "+=", "2250" ] }
 		]
 	},
 	
@@ -170,12 +170,12 @@
 		"id": "CORE1_DEGRADE_CHECK",
 		"//": "Degrade check for respective core",
 		"recurrence": "5 minutes",
-		"deactivate_condition": { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, ">", { "const": 1 } ] },
-		"condition": { "and": [ {"compare_int": [ { "u_val": "vitamin", "name": "impurities" }, ">=", { "const": 1250 } ] }, { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 1 } ] } ] },
+		"deactivate_condition": { "math": [ "u_manacoretier > 1" ] },
+		"condition": { "and": [ { "math": [ "u_val('vitamin', 'name: impurities') >= 1250" ] }, { "math": [ "u_manacoretier == 1" ] } ] },
 		"effect": [
 			{ "u_message": "Your Mana Core cracks!", "type": "bad" },
-			{ "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 100 } ] },
-			{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "=", { "const": 0 } ] },
+			{ "math": [ "u_manacoretier", "=", "100" ] },
+			{ "math": [ "u_val('vitamin', 'name: impurities')", "=", "0" ] },
 			{ "u_add_trait": "MANACORE1CRACKED" },
 			{ "u_lose_trait": "MANACORE1" }
 		]
@@ -186,12 +186,12 @@
 		"id": "CORE2_DEGRADE_CHECK",
 		"//": "Degrade check for respective core",
 		"recurrence": "5 minutes",
-		"deactivate_condition": { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, ">", { "const": 2 } ] },
-		"condition": { "and": [ {"compare_int": [ { "u_val": "vitamin", "name": "impurities" }, ">=", { "const": 1875 } ] }, { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 2 } ] } ] },
+		"deactivate_condition": { "math": [ "u_manacoretier > 2" ] },
+		"condition": { "and": [ { "math": [ "u_val('vitamin', 'name: impurities') >= 1875" ] }, { "math": [ "u_manacoretier == 2" ] } ] },
 		"effect": [
 			{ "u_message": "Your Mana Core cracks!", "type": "bad" },
-			{ "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 100 } ] },
-			{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "=", { "const": 0 } ] },
+			{ "math": [ "u_manacoretier", "=", "100" ] },
+			{ "math": [ "u_val('vitamin', 'name: impurities')", "=", "0" ] },
 			{ "u_add_trait": "MANACORE2CRACKED" },
 			{ "u_lose_trait": "MANACORE2" }
 		]
@@ -202,12 +202,12 @@
 		"id": "CORE3_DEGRADE_CHECK",
 		"//": "Degrade check for respective core",
 		"recurrence": "5 minutes",
-		"deactivate_condition": { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, ">", { "const": 3 } ] },
-		"condition": { "and": [ {"compare_int": [ { "u_val": "vitamin", "name": "impurities" }, ">=", { "const": 2500 } ] }, { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 3 } ] } ] },
+		"deactivate_condition": { "math": [ "u_manacoretier > 3" ] },
+		"condition": { "and": [ { "math": [ "u_val('vitamin', 'name: impurities') >= 2500" ] }, { "math": [ "u_manacoretier == 3" ] } ] },
 		"effect": [
 			{ "u_message": "Your Mana Core cracks!", "type": "bad" },
-			{ "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 100 } ] },
-			{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "=", { "const": 0 } ] },
+			{ "math": [ "u_manacoretier", "=", "100" ] },
+			{ "math": [ "u_val('vitamin', 'name: impurities')", "=", "0" ] },
 			{ "u_add_trait": "MANACORE3CRACKED" },
 			{ "u_lose_trait": "MANACORE3" }
 		]
@@ -218,12 +218,12 @@
 		"id": "CORE4_DEGRADE_CHECK",
 		"//": "Degrade check for respective core",
 		"recurrence": "5 minutes",
-		"deactivate_condition": { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, ">", { "const": 4 } ] },
-		"condition": { "and": [ {"compare_int": [ { "u_val": "vitamin", "name": "impurities" }, ">=", { "const": 3750 } ] }, { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 4 } ] } ] },
+		"deactivate_condition": { "math": [ "u_manacoretier > 4" ] },
+		"condition": { "and": [ { "math": [ "u_val('vitamin', 'name: impurities') >= 3750" ] }, { "math": [ "u_manacoretier == 4" ] } ] },
 		"effect": [
 			{ "u_message": "Your Mana Core cracks!", "type": "bad" },
-			{ "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 100 } ] },
-			{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "=", { "const": 0 } ] },
+			{ "math": [ "u_manacoretier", "=", "100" ] },
+			{ "math": [ "u_val('vitamin', 'name: impurities')", "=", "0" ] },
 			{ "u_add_trait": "MANACORE4CRACKED" },
 			{ "u_lose_trait": "MANACORE4" }
 		]
@@ -234,12 +234,12 @@
 		"id": "CORE5_DEGRADE_CHECK",
 		"//": "Degrade check for respective core",
 		"recurrence": "5 minutes",
-		"deactivate_condition": { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, ">", { "const": 5 } ] },
-		"condition": { "and": [ {"compare_int": [ { "u_val": "vitamin", "name": "impurities" }, ">=", { "const": 5000 } ] }, { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 5 } ] } ] },
+		"deactivate_condition": { "math": [ "u_manacoretier > 5" ] },
+		"condition": { "and": [ { "math": [ "u_val('vitamin', 'name: impurities') >= 5000" ] }, { "math": [ "u_manacoretier == 5" ] } ] },
 		"effect": [
 			{ "u_message": "Your Mana Core cracks!", "type": "bad" },
-			{ "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 100 } ] },
-			{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "=", { "const": 0 } ] },
+			{ "math": [ "u_manacoretier", "=", "100" ] },
+			{ "math": [ "u_val('vitamin', 'name: impurities')", "=", "0" ] },
 			{ "u_add_trait": "MANACORE5CRACKED" },
 			{ "u_lose_trait": "MANACORE5" }
 		]
@@ -250,12 +250,12 @@
 		"id": "CORE6_DEGRADE_CHECK",
 		"//": "Degrade check for respective core",
 		"recurrence": "5 minutes",
-		"deactivate_condition": { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, ">", { "const": 6 } ] },
-		"condition": { "and": [ {"compare_int": [ { "u_val": "vitamin", "name": "impurities" }, ">=", { "const": 8750 } ] }, { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 6 } ] } ] },
+		"deactivate_condition": { "math": [ "u_manacoretier > 6" ] },
+		"condition": { "and": [ { "math": [ "u_val('vitamin', 'name: impurities') >= 8750" ] }, { "math": [ "u_manacoretier == 6" ] } ] },
 		"effect": [
 			{ "u_message": "Your Mana Core cracks!", "type": "bad" },
-			{ "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 100 } ] },
-			{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "=", { "const": 0 } ] },
+			{ "math": [ "u_manacoretier", "=", "100" ] },
+			{ "math": [ "u_val('vitamin', 'name: impurities')", "=", "0" ] },
 			{ "u_add_trait": "MANACORE6CRACKED" },
 			{ "u_lose_trait": "MANACORE6" }
 		]
@@ -266,12 +266,12 @@
 		"id": "CORE7_DEGRADE_CHECK",
 		"//": "Degrade check for respective core",
 		"recurrence": "5 minutes",
-		"deactivate_condition": { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, ">", { "const": 7 } ] },
-		"condition": { "and": [ {"compare_int": [ { "u_val": "vitamin", "name": "impurities" }, ">=", { "const": 12500 } ] }, { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 7 } ] } ] },
+		"deactivate_condition": { "math": [ "u_manacoretier > 7" ] },
+		"condition": { "and": [ { "math": [ "u_val('vitamin', 'name: impurities') >= 12500" ] }, { "math": [ "u_manacoretier == 7" ] } ] },
 		"effect": [
 			{ "u_message": "Your Mana Core cracks!", "type": "bad" },
-			{ "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 100 } ] },
-			{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "=", { "const": 0 } ] },
+			{ "math": [ "u_manacoretier", "=", "100" ] },
+			{ "math": [ "u_val('vitamin', 'name: impurities')", "=", "0" ] },
 			{ "u_add_trait": "MANACORE7CRACKED" },
 			{ "u_lose_trait": "MANACORE7" }
 		]
@@ -282,12 +282,12 @@
 		"id": "CORE8_DEGRADE_CHECK",
 		"//": "Degrade check for respective core",
 		"recurrence": "5 minutes",
-		"deactivate_condition": { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, ">", { "const": 8 } ] },
-		"condition": { "and": [ {"compare_int": [ { "u_val": "vitamin", "name": "impurities" }, ">=", { "const": 25000 } ] }, { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 8 } ] } ] },
+		"deactivate_condition": { "math": [ "u_manacoretier > 8" ] },
+		"condition": { "and": [ { "math": [ "u_val('vitamin', 'name: impurities') >= 25000" ] }, { "math": [ "u_manacoretier == 8" ] } ] },
 		"effect": [
 			{ "u_message": "Your Mana Core cracks!", "type": "bad" },
-			{ "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "=", { "const": 100 } ] },
-			{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "=", { "const": 0 } ] },
+			{ "math": [ "u_manacoretier", "=", "100" ] },
+			{ "math": [ "u_val('vitamin', 'name: impurities')", "=", "0" ] },
 			{ "u_add_trait": "MANACORE8CRACKED" },
 			{ "u_lose_trait": "MANACORE8" }
 		]
@@ -298,7 +298,7 @@
 		"id": "MANA_CORE_SENSATION_GOOD",
 		"//": "A random chance every 6 hours to signify that a breakthrough would succeed",
 		"recurrence": "6 hours",
-		"condition": { "and": [ { "not": {"u_has_bionics": "ANY" } }, { "not": { "u_has_effect": "sleep" } }, { "compare_int": [ { "u_val": "vitamin", "name": "impurities" }, "<=", { "arithmetic": [ { "u_val": "var", "var_name": "manacoretier" }, "*", { "const": 50 } ] } ] }, { "x_in_y_chance": { "x": 1, "y": 3 } } ] },
+		"condition": { "and": [ { "not": {"u_has_bionics": "ANY" } }, { "not": { "u_has_effect": "sleep" } }, { "math": [ "(u_val('vitamin', 'name: impurities')<=u_manacoretier*50)" ]  }, { "x_in_y_chance": { "x": 1, "y": 3 } } ] },
 		"effect":
 		[
 			{ "u_message": "You feel your mana core resonate within you.", "type": "good" }
@@ -310,7 +310,7 @@
 		"id": "MANA_CORE_SENSATION_BAD",
 		"//": "A random chance every 12 hours to signify that you are over the impurity soft cap",
 		"recurrence": "12 hours",
-		"condition": { "and": [ { "not": {"u_has_bionics": "ANY" } }, { "not": { "u_has_effect": "sleep" } }, { "compare_int": [ { "u_val": "vitamin", "name": "impurities" }, ">=", { "u_val": "var", "var_name": "impurities_soft_cap" } ] }, { "x_in_y_chance": { "x": 1, "y": 3 } } ] },
+		"condition": { "and": [ { "not": {"u_has_bionics": "ANY" } }, { "not": { "u_has_effect": "sleep" } }, { "math": [ "u_val('vitamin', 'name: impurities')>=u_impurities_soft_cap" ]  }, { "x_in_y_chance": { "x": 1, "y": 3 } } ] },
 		"effect":
 		[
 			{ "u_message": "You feel your mana core is under stress.", "type": "bad" }
@@ -322,14 +322,14 @@
 		"id": "MANA_CORE_SENSATION_VERY_BAD",
 		"//": "Once you are very close to the limit of cracking your mana core every 6 hours a chance to clear out a lot of impurities",
 		"recurrence": "6 hours",
-		"condition": { "and": [ { "not": {"u_has_bionics": "ANY" } }, { "not": { "u_has_effect": "sleep" } }, { "compare_int": [ { "u_val": "vitamin", "name": "impurities" }, ">=", { "arithmetic": [ { "u_val": "var", "var_name": "impurities_soft_cap" }, "*", { "const": 2 } ] } ] }, { "x_in_y_chance": { "x": 1, "y": 3 } } ] },
+		"condition": { "and": [ { "not": {"u_has_bionics": "ANY" } }, { "not": { "u_has_effect": "sleep" } }, { "math": [ "u_val('vitamin', 'name: impurities')>=u_impurities_soft_cap*50" ]  }, { "x_in_y_chance": { "x": 1, "y": 3 } } ] },
 		"effect":
 		[
 			{ "u_message": "Your mana core suddenly destabilizes and expels impurities!", "type": "bad" },
-			{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "-=", { "arithmetic": [ { "u_val": "var", "var_name": "impurities_soft_cap" }, "/", { "const": 4 } ] } ] },
-			{ "arithmetic": [ { "u_val": "pain" }, "+=", { "const": 100 } ] },
-			{ "arithmetic": [ { "u_val": "focus" }, "-=", { "const": 70 } ] },
-			{ "arithmetic": [ { "u_val": "mana" }, "=", { "const": 0 } ] }
+			{ "math": [ "u_val('vitamin', 'name: impurities')", "-=", "(u_impurities_soft_cap/4)" ] },
+			{ "math": [ "u_pain()", "+=", "100" ] },
+			{ "math": [ "u_val('focus')", "-=", "70" ] },
+			{ "math": [ "u_val('mana')", "=", "0" ] }
 		]
 	},
 	
@@ -337,12 +337,12 @@
 		"type": "effect_on_condition",
 		"id": "GENERATE_MANA_EOC",
 		"//": "Related to the Generate Mana spell",
-		"condition": { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, "!=", { "const": 100 } ] },
+		"condition": { "math": [ "u_manacoretier != 100" ] },
 		"effect":
 		[
 			{ "u_message": "Your Mana Core expels mana!", "type": "good" },
-			{ "arithmetic": [ { "u_val": "mana" }, "+=", { "arithmetic": [ { "arithmetic": [ { "u_val": "mana_max" }, "*", { "u_val": "var", "var_name": "manacoretier" } ] }, "/", { "const": 10 } ] } ] },
-			{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities" }, "+=", { "arithmetic": [ { "arithmetic": [ { "u_val": "var", "var_name": "impurities_soft_cap" }, "*", { "const": 20 } ] }, "/", { "const": 100 } ] } ] },
+			{ "math": [ "u_val('mana')", "+=", "u_val('mana_max')*u_manacoretier/10" ] },
+			{ "math": [ "u_val('vitamin', 'name: impurities')", "+=", "u_impurities_soft_cap/5" ] },
 			{ "u_message": "Your Mana Core trembles slightly!", "type": "bad" }
 		],
 		"false_effect":
@@ -355,11 +355,11 @@
 		"type": "effect_on_condition",
 		"id": "PURGE_IMPURITIES",
 		"//": "Related to the Purge Impurities spell",
-		"condition": { "compare_int": [ { "u_val": "var", "var_name": "manacoretier" }, "!=", { "const": 0 } ] },
+		"condition": { "math": [ "u_manacoretier != 0" ] },
 		"effect":
 		[
 			{ "u_message": "There are <u_val:impurities> impurities.", "type": "good" },
-			{ "arithmetic": [ { "u_val": "vitamin", "name": "impurities"}, "=", { "const": 0 } ] }
+			{ "math": [ "u_val('vitamin', 'name: impurities')", "=", "0" ] }
 		]
 	}
 ]
