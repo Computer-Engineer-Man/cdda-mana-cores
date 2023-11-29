@@ -20,11 +20,11 @@
 		"type": "effect_on_condition",
 		"id": "BEGIN_BREAKTHROUGH",
 		"//": "Ensures no bionics, that impurities are low enough, and has a 1 out of 3 chance it succeed",
-		"condition": { "and": [ { "not": {"u_has_bionics": "ANY" } }, { "math": [ "(u_manacoretier*50)<=u_val('vitamin', 'name: impurities')" ]   }, { "x_in_y_chance": { "x": 1, "y": 3 } } ] },
+		"condition": { "and": [ { "not": {"u_has_bionics": "ANY" } }, { "math": [ "u_val('vitamin', 'name: impurities')<=(u_manacoretier*50)" ]   }, { "x_in_y_chance": { "x": 1, "y": 3 } } ] },
 		"effect": 
 		[
 			{ "u_message": "You breakthrough!", "type": "good" },
-			{ "switch": { "u_val": "var", "var_name": "u_manacoretier" },
+			{ "switch": { "u_val": "var", "var_name": "manacoretier" },
 			"cases": 
 			[
 				{
@@ -100,7 +100,7 @@
 		[
 			{ "u_message": "You fail your breakthrough!", "type": "bad"	},
 			{ "u_message": "You feel your mana core vibrate!", "type": "bad" },
-			{ "switch": { "u_val": "var", "var_name": "u_manacoretier" },
+			{ "switch": { "u_val": "var", "var_name": "manacoretier" },
 			"cases":
 			[		
 				{
@@ -147,7 +147,7 @@
 		"type": "effect_on_condition",
 		"id": "ATTEMPT_FINAL_BREAKTHROUGH",
 		"//": "This is the endgame of this mod, similar to regular breakthroughs with the exception of only a 1 in 10 chance",
-		"condition": { "and": [ { "x_in_y_chance": { "x": 1, "y": 10 } }, { "math": [ "(u_manacoretier*50)<=u_val('vitamin', 'name: impurities')" ]   } ] },
+		"condition": { "and": [ { "x_in_y_chance": { "x": 1, "y": 10 } }, { "math": [ "u_val('vitamin', 'name: impurities')<=(u_manacoretier*50)" ]   } ] },
 		"effect": 
 		[
 			{ "u_message": "You feel as though the world itself is connected to you. You have broken through what many consider the end.", "type": "good" },
