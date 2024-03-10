@@ -1,0 +1,137 @@
+[
+	{
+		"type": "enchantment",
+		"id": "MANACORE1_BUFF",
+		"values": [
+			{ "value": "LEARNING_FOCUS", "multiply": 0.02 },
+			{ "value": "MAX_MANA", "multiply": 0.02 }
+		]
+	},
+	
+	{
+		"type": "enchantment",
+		"id": "CRACKED_MANACORE1_BUFF",
+		"values": [
+			{ "value": "MAX_MANA", "multiply": -0.5 }
+		]
+	},
+	
+	{
+		"type": "enchantment",
+		"id": "MANACORE2_BUFF",
+		"values": [
+			{ "value": "LEARNING_FOCUS", "multiply": 0.1 },
+			{ "value": "MAX_MANA", "multiply": 0.1 }
+		]
+	},
+	
+	{
+		"type": "enchantment",
+		"id": "CRACKED_MANACORE2_BUFF",
+		"values": [
+			{ "value": "MAX_MANA", "multiply": -0.45 }
+		]
+	},
+	
+	{
+		"type": "enchantment",
+		"id": "MANACORE3_BUFF",
+		"values": [
+			{ "value": "LEARNING_FOCUS", "multiply": 0.25 },
+			{ "value": "MAX_MANA", "multiply": 0.25 }
+		]
+	},
+	
+	{
+		"type": "enchantment",
+		"id": "CRACKED_MANACORE3_BUFF",
+		"values": [
+			{ "value": "MAX_MANA", "multiply": -0.375 }
+		]
+	},
+	
+	{
+		"type": "enchantment",
+		"id": "MANACORE4_BUFF",
+		"values": [
+			{ "value": "LEARNING_FOCUS", "multiply": 0.5 },
+			{ "value": "MAX_MANA", "multiply": 0.4 }
+		]
+	},
+	
+	{
+		"type": "enchantment",
+		"id": "CRACKED_MANACORE4_BUFF",
+		"values": [
+			{ "value": "MAX_MANA", "multiply": -0.3 }
+		]
+	},
+	
+	{
+		"type": "enchantment",
+		"id": "MANACORE5_BUFF",
+		"values": [
+			{ "value": "LEARNING_FOCUS", "multiply": 0.8 },
+			{ "value": "MAX_MANA", "multiply": 0.65 }
+		]
+	},
+	
+	{
+		"type": "enchantment",
+		"id": "CRACKED_MANACORE5_BUFF",
+		"values": [
+			{ "value": "MAX_MANA", "multiply": -0.175 }
+		]
+	},
+	
+	{
+		"type": "enchantment",
+		"id": "MANACORE6_BUFF",
+		"values": [
+			{ "value": "LEARNING_FOCUS", "multiply": 1.1 },
+			{ "value": "MAX_MANA", "multiply": 1 }
+		]
+	},
+	
+	{
+		"type": "enchantment",
+		"id": "CRACKED_MANACORE6_BUFF",
+		"values": [
+			{ "value": "MAX_MANA", "multiply": 0 }
+		]
+	},
+	
+	{
+		"type": "enchantment",
+		"id": "MANACORE7_BUFF",
+		"values": [
+			{ "value": "LEARNING_FOCUS", "multiply": 2 },
+			{ "value": "MAX_MANA", "multiply": 3 }
+		]
+	},
+	
+	{
+		"type": "enchantment",
+		"id": "CRACKED_MANACORE7_BUFF",
+		"values": [
+			{ "value": "MAX_MANA", "multiply": 1 }
+		]
+	},
+	
+	{
+		"type": "enchantment",
+		"id": "MANACORE8_BUFF",
+		"values": [
+			{ "value": "LEARNING_FOCUS", "multiply": 4 },
+			{ "value": "MAX_MANA", "multiply": 7 }
+		]
+	},
+	
+	{
+		"type": "enchantment",
+		"id": "CRACKED_MANACORE8_BUFF",
+		"values": [
+			{ "value": "MAX_MANA", "multiply": 3 }
+		]
+	}
+]
