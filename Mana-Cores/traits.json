@@ -9,8 +9,7 @@
 		"purifiable": false,
 		"player_display": true,
 		"active": true,
-		"mana_multiplier": 1,
-		"enchantments": [ "MANACORE1_BUFF" ],
+		"enchantments": [ { "value": "LEARNING_FOCUS", "multiply": 0.02 } ],
 		"spells_learned": [ [ "generate_mana", 1 ] ],
 		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
 	},
@@ -24,7 +23,7 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-		"mana_multiplier": 0.5
+		"enchantments": [ { "value": "MAX_MANA", "multiply": -0.5 } ]
 	},
 	
 	{
@@ -37,8 +36,7 @@
 		"purifiable": false,
 		"player_display": true,
 		"active": true,
-		"mana_multiplier": 1.1,
-		"enchantments": [ "MANACORE2_BUFF" ],
+        "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 0.1 }, { "value": "MAX_MANA", "multiply": 0.1 } ] } ],
 		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
 	},
 	
@@ -51,7 +49,7 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-		"mana_multiplier": 0.55
+		"enchantments": [ { "value": "MAX_MANA", "multiply": -0.45 } ]
 	},
 	
 	{
@@ -64,8 +62,7 @@
 		"purifiable": false,
 		"player_display": true,
 		"active": true,
-		"mana_multiplier": 1.25,
-		"enchantments": [ "MANACORE3_BUFF" ],
+        "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 0.25 }, { "value": "MAX_MANA", "multiply": 0.25 } ] } ],
 		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
 	},
 	
@@ -78,7 +75,7 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-		"mana_multiplier": 0.625
+		"enchantments": [ { "value": "MAX_MANA", "multiply": -0.375 } ]
 	},
 	
 	{
@@ -91,8 +88,7 @@
 		"purifiable": false,
 		"player_display": true,
 		"active": true,
-		"mana_multiplier": 1.4,
-		"enchantments": [ "MANACORE4_BUFF" ],
+        "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 0.5 }, { "value": "MAX_MANA", "multiply": 0.4 } ] } ],
 		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
 	},
 	
@@ -105,7 +101,7 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-		"mana_multiplier": 0.7
+		"enchantments": [ { "value": "MAX_MANA", "multiply": -0.3 } ]
 	},
 	
 	{
@@ -118,9 +114,8 @@
 		"purifiable": false,
 		"player_display": true,
 		"active": true,
-		"mana_multiplier": 1.65,
 		"flags": [ "SILENT_SPELL" ],
-		"enchantments": [ "MANACORE5_BUFF" ],
+        "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 0.8 }, { "value": "MAX_MANA", "multiply": 0.65 } ] } ],
 		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
 	},
 	
@@ -133,7 +128,7 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-		"mana_multiplier": 0.825
+		"enchantments": [ { "value": "MAX_MANA", "multiply": -0.175 } ]
 	},
 	
 	{
@@ -146,9 +141,8 @@
 		"purifiable": false,
 		"player_display": true,
 		"active": true,
-		"mana_multiplier": 2,
 		"flags": [ "SILENT_SPELL" ],
-		"enchantments": [ "MANACORE6_BUFF" ],
+        "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 1.1 }, { "value": "MAX_MANA", "multiply": 1 } ] } ],
 		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
 	},
 	
@@ -160,8 +154,7 @@
 		"description": "A Cracked Mana Core that has shattered under immense impurities.",
 		"valid": false,
 		"purifiable": false,
-		"player_display": true,
-		"mana_multiplier": 1
+		"player_display": true
 	},
 	
 	{
@@ -174,9 +167,8 @@
 		"purifiable": false,
 		"player_display": true,
 		"active": true,
-		"mana_multiplier": 4,
 		"flags": [ "SILENT_SPELL", "SUBTLE_SPELL" ],
-		"enchantments": [ "MANACORE7_BUFF" ],
+        "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 2 }, { "value": "MAX_MANA", "multiply": 3 } ] } ],
 		"activated_eocs": [ "ATTEMPT_FINAL_BREAKTHROUGH" ]
 	},
 	
@@ -189,7 +181,7 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-		"mana_multiplier": 2
+		"enchantments": [ { "value": "MAX_MANA", "multiply": 1 } ]
 	},
 	
 	{
@@ -201,9 +193,7 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-		"mana_multiplier": 8,
-		"flags": [ "SILENT_SPELL", "SUBTLE_SPELL" ],
-		"enchantments": [ "MANACORE8_BUFF" ]
+        "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 4 }, { "value": "MAX_MANA", "multiply": 7 } ] } ]
 	},
 	
 	{
@@ -215,6 +205,6 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-		"mana_multiplier": 4
+		"enchantments": [ { "value": "MAX_MANA", "multiply": 3 } ]
 	}
 ]
