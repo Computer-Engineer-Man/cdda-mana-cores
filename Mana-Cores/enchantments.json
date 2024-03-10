@@ -3,8 +3,7 @@
 		"type": "enchantment",
 		"id": "MANACORE1_BUFF",
 		"values": [
-			{ "value": "LEARNING_FOCUS", "multiply": 0.02 },
-			{ "value": "MAX_MANA", "multiply": 0.02 }
+			{ "value": "LEARNING_FOCUS", "multiply": 0.02 }
 		]
 	},
 	
