@@ -36,7 +36,7 @@
 		"purifiable": false,
 		"player_display": true,
 		"active": true,
-        "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 0.1 }, { "value": "MAX_MANA", "multiply": 0.1 } ] } ],
+                "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 0.1 }, { "value": "MAX_MANA", "multiply": 0.1 } ] } ],
 		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
 	},
 	
@@ -62,7 +62,7 @@
 		"purifiable": false,
 		"player_display": true,
 		"active": true,
-        "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 0.25 }, { "value": "MAX_MANA", "multiply": 0.25 } ] } ],
+                "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 0.25 }, { "value": "MAX_MANA", "multiply": 0.25 } ] } ],
 		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
 	},
 	
@@ -88,7 +88,7 @@
 		"purifiable": false,
 		"player_display": true,
 		"active": true,
-        "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 0.5 }, { "value": "MAX_MANA", "multiply": 0.4 } ] } ],
+                "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 0.5 }, { "value": "MAX_MANA", "multiply": 0.4 } ] } ],
 		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
 	},
 	
@@ -115,7 +115,7 @@
 		"player_display": true,
 		"active": true,
 		"flags": [ "SILENT_SPELL" ],
-        "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 0.8 }, { "value": "MAX_MANA", "multiply": 0.65 } ] } ],
+                "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 0.8 }, { "value": "MAX_MANA", "multiply": 0.65 } ] } ],
 		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
 	},
 	
@@ -142,7 +142,7 @@
 		"player_display": true,
 		"active": true,
 		"flags": [ "SILENT_SPELL" ],
-        "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 1.1 }, { "value": "MAX_MANA", "multiply": 1 } ] } ],
+                "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 1.1 }, { "value": "MAX_MANA", "multiply": 1 } ] } ],
 		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
 	},
 	
@@ -168,7 +168,7 @@
 		"player_display": true,
 		"active": true,
 		"flags": [ "SILENT_SPELL", "SUBTLE_SPELL" ],
-        "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 2 }, { "value": "MAX_MANA", "multiply": 3 } ] } ],
+                "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 2 }, { "value": "MAX_MANA", "multiply": 3 } ] } ],
 		"activated_eocs": [ "ATTEMPT_FINAL_BREAKTHROUGH" ]
 	},
 	
@@ -193,7 +193,7 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-        "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 4 }, { "value": "MAX_MANA", "multiply": 7 } ] } ]
+                "enchantments": [ { "values": [ { "value": "LEARNING_FOCUS", "multiply": 4 }, { "value": "MAX_MANA", "multiply": 7 } ] } ]
 	},
 	
 	{
