@@ -194,6 +194,7 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
+                "flags": [ "SILENT_SPELL", "SUBTLE_SPELL" ],
 		"enchantments": [ "MANACORE8_BUFF" ]
 	},
 	
