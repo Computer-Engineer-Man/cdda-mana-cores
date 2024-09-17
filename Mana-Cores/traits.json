@@ -9,7 +9,6 @@
 		"purifiable": false,
 		"player_display": true,
 		"active": true,
-		"mana_multiplier": 1,
 		"enchantments": [ "MANACORE1_BUFF" ],
 		"spells_learned": [ [ "generate_mana", 1 ] ],
 		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
@@ -24,7 +23,7 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-		"mana_multiplier": 0.5
+		"enchantments": [ "CRACKED_MANACORE1_BUFF" ]
 	},
 	
 	{
@@ -37,7 +36,6 @@
 		"purifiable": false,
 		"player_display": true,
 		"active": true,
-		"mana_multiplier": 1.1,
 		"enchantments": [ "MANACORE2_BUFF" ],
 		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
 	},
@@ -51,7 +49,7 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-		"mana_multiplier": 0.55
+		"enchantments": [ "CRACKED_MANACORE2_BUFF" ]
 	},
 	
 	{
@@ -64,7 +62,6 @@
 		"purifiable": false,
 		"player_display": true,
 		"active": true,
-		"mana_multiplier": 1.25,
 		"enchantments": [ "MANACORE3_BUFF" ],
 		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
 	},
@@ -78,7 +75,7 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-		"mana_multiplier": 0.625
+		"enchantments": [ "CRACKED_MANACORE3_BUFF" ]
 	},
 	
 	{
@@ -91,7 +88,6 @@
 		"purifiable": false,
 		"player_display": true,
 		"active": true,
-		"mana_multiplier": 1.4,
 		"enchantments": [ "MANACORE4_BUFF" ],
 		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
 	},
@@ -105,7 +101,7 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-		"mana_multiplier": 0.7
+		"enchantments": [ "CRACKED_MANACORE4_BUFF" ]
 	},
 	
 	{
@@ -118,7 +114,6 @@
 		"purifiable": false,
 		"player_display": true,
 		"active": true,
-		"mana_multiplier": 1.65,
 		"flags": [ "SILENT_SPELL" ],
 		"enchantments": [ "MANACORE5_BUFF" ],
 		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
@@ -133,7 +128,7 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-		"mana_multiplier": 0.825
+		"enchantments": [ "CRACKED_MANACORE5_BUFF" ]
 	},
 	
 	{
@@ -146,7 +141,6 @@
 		"purifiable": false,
 		"player_display": true,
 		"active": true,
-		"mana_multiplier": 2,
 		"flags": [ "SILENT_SPELL" ],
 		"enchantments": [ "MANACORE6_BUFF" ],
 		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
@@ -161,7 +155,7 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-		"mana_multiplier": 1
+		"enchantments": [ "CRACKED_MANACORE6_BUFF" ]
 	},
 	
 	{
@@ -174,7 +168,6 @@
 		"purifiable": false,
 		"player_display": true,
 		"active": true,
-		"mana_multiplier": 4,
 		"flags": [ "SILENT_SPELL", "SUBTLE_SPELL" ],
 		"enchantments": [ "MANACORE7_BUFF" ],
 		"activated_eocs": [ "ATTEMPT_FINAL_BREAKTHROUGH" ]
@@ -189,7 +182,7 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-		"mana_multiplier": 2
+		"enchantments": [ "CRACKED_MANACORE7_BUFF" ]
 	},
 	
 	{
@@ -201,8 +194,7 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-		"mana_multiplier": 8,
-		"flags": [ "SILENT_SPELL", "SUBTLE_SPELL" ],
+                "flags": [ "SILENT_SPELL", "SUBTLE_SPELL" ],
 		"enchantments": [ "MANACORE8_BUFF" ]
 	},
 	
@@ -215,6 +207,6 @@
 		"valid": false,
 		"purifiable": false,
 		"player_display": true,
-		"mana_multiplier": 4
+		"enchantments": [ "CRACKED_MANACORE8_BUFF" ]
 	}
 ]
