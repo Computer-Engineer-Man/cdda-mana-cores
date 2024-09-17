@@ -11,4 +11,10 @@ Please, by all means make a better mod. I made this because I feel that there is
 ## It doesn't require Magiclysm?
 Believe it or not mana and spells are in the base game. Originally it was called Magiclysm Mana Cores but I decided to rename the mod to Mana Cores in case any other mods use mana but are not compatible with Magiclysm.
 ## Shoutouts
-[MorvarchPrincess](https://github.com/MorvarchPrincess) - For updating the mod to use math and work with the latest experimental
+[MorvarchPrincess](https://github.com/MorvarchPrincess)
+
+[rty275](https://github.com/rty275)
+
+[b3brodie](https://github.com/b3brodie)
+
+Thank you all for helping me develop the mod.
