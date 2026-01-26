@@ -1,0 +1,94 @@
+[
+    {
+        "id": "essence_crystal_ordinary",
+        "type": "ITEM",
+        "category": "spare_parts",
+        "name": {
+            "str": "Essence Crystal (Ordinary)"
+        },
+        "description": "A small crystallized fragment of raw essence. Consuming it provides a burst of energy to your core.",
+        "weight": "10 g",
+        "volume": "10 ml",
+        "price": "1000 USD",
+        "material": [
+            "powder"
+        ],
+        "symbol": "*",
+        "color": "white",
+        "use_action": {
+            "type": "cast_spell",
+            "spell_id": "consume_essence_ordinary",
+            "no_fail": true,
+            "level": 0
+        }
+    },
+    {
+        "id": "essence_crystal_greater",
+        "type": "ITEM",
+        "category": "spare_parts",
+        "name": {
+            "str": "Essence Crystal (Greater)"
+        },
+        "description": "A dense crystal of refined essence. Contains the equivalent of 1,000 ordinary essence.",
+        "weight": "50 g",
+        "volume": "50 ml",
+        "price": "100 kUSD",
+        "material": [
+            "powder"
+        ],
+        "symbol": "*",
+        "color": "yellow",
+        "use_action": {
+            "type": "cast_spell",
+            "spell_id": "consume_essence_greater",
+            "no_fail": true,
+            "level": 0
+        }
+    },
+    {
+        "id": "essence_crystal_celestial",
+        "type": "ITEM",
+        "category": "spare_parts",
+        "name": {
+            "str": "Essence Crystal (Celestial)"
+        },
+        "description": "A radiant crystal pulsing with celestial power. Used for high-tier breakthroughs.",
+        "weight": "100 g",
+        "volume": "100 ml",
+        "price": "10000 kUSD",
+        "material": [
+            "powder"
+        ],
+        "symbol": "*",
+        "color": "light_blue",
+        "use_action": {
+            "type": "cast_spell",
+            "spell_id": "consume_essence_celestial",
+            "no_fail": true,
+            "level": 0
+        }
+    },
+    {
+        "id": "essence_crystal_immortal",
+        "type": "ITEM",
+        "category": "spare_parts",
+        "name": {
+            "str": "Essence Crystal (Immortal)"
+        },
+        "description": "A shard of reality itself. Infinite potential lies within.",
+        "weight": "200 g",
+        "volume": "200 ml",
+        "price": "1000000 kUSD",
+        "material": [
+            "powder"
+        ],
+        "symbol": "*",
+        "color": "magenta",
+        "use_action": {
+            "type": "cast_spell",
+            "spell_id": "consume_essence_immortal",
+            "no_fail": true,
+            "level": 0
+        }
+    }
+]

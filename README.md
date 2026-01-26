@@ -1,20 +1,49 @@
-# Mana Cores Mod
-Adds Mana Cores mod for Cataclysm: Dark Days Ahead. The mod should be used in the experimental version of the game.
-## What are Mana Cores?
-Well, Mana Cores come in 8 flavors. Red, Orange, Yellow, Green, Cyan, Blue, Purple, and White. Each is more powerful than the last and follows exponential growth at the later stages. Be warned though, for each mana core there is a cracked variant. A mana core cracks when too many impurities are in the core. I intend for the impurities to be hidden and your only sense of if it is a good time to breakthrough is when you get a good feeling about breaking through. 
-## What do you mean good feeling?
-I mean your mana core literally will tell you if you are ready for a breakthrough.
-## Well, what else can Mana Cores do?
-Outside of increasing your max mana and mana regen? Mana Cores also assist you with learning magic either through reading or actually practicing magic. There is also a single spell which allows you to gain a variable amount of mana based on your Mana Core tier. Be warned, overuse will lead to unwanted consequences.
-## I think this is unbalanced and stupid and I have a much better idea!
-Please, by all means make a better mod. I made this because I feel that there is a system missing for being able to improve yourself. Yes yes I know manatouched mutations are a thing but I never liked mutations. If you don't want to make a mod you can feel free to tell me either on discord or on github and I will probably try to implement it. I love CDDA and any change you want done with a good enough reason will probably send me on a quest to fulfill such a change.
-## It doesn't require Magiclysm?
-Believe it or not mana and spells are in the base game. Originally it was called Magiclysm Mana Cores but I decided to rename the mod to Mana Cores in case any other mods use mana but are not compatible with Magiclysm.
-## Shoutouts
-[MorvarchPrincess](https://github.com/MorvarchPrincess)
+# Mana Cores: Infinite Cultivation
 
-[rty275](https://github.com/rty275)
+A comprehensive cultivation overhaul for *Cataclysm: Dark Days Ahead*.
 
-[b3brodie](https://github.com/b3brodie)
+## Overview
+This mod introduces a "Cultivation System" inspired by *The Infinite Realm* and similar progression fantasies. It allows your character to gather Essence from the environment, breakthrough to higher realms of existence, and utilize powerful Path techniques.
 
-Thank you all for helping me develop the mod.
+## How to Play
+
+### 1. Character Creation
+- **Scenario**: Choose **"Cultivator's Awakening"** to start with the "Cultivator" profession.
+- **Path Selection**: In the Traits selection screen (Traits -> Mutations -> Starting Traits), you MUST select one of the "Cultivation Path" traits to begin your journey. This grants you the ability to `Cultivate Essence` and unique powers.
+    - **Path of the Thundering Limb**: Focus on Speed, Lightning, and movement.
+    - **Path of the Scorched Breath**: Focus on Fire, Destruction, and AoE.
+    - **Path of the Final End**: Focus on raw Damage, Erasure, and finishing blows.
+
+### 2. Cultivation (The Loop)
+- **Gather Essence**: 
+    - You start with the spell `Cultivate Essence`. Cast it via the spell menu (`S` or `a`).
+    - Casting takes **1 hour** of in-game time.
+    - It gathers ambient Essence from the world and stores it in your internal "Essence" pool (shown in the sidebar once you have a core).
+    - Monsters you kill drop **Essence Crystals** (currently 100% chance, ordinary tier). Loot them and consume (`a`ctivate) to gain Essence instantly.
+    - Essence and Core Tier are displayed in the sidebar once you have a Mana Core.
+
+### 3. Breakthroughs
+- You start at the **Mortal Realm** (Red Core).
+- **Goal**: Accumulate enough Essence to breakthrough to the next Realm.
+- **How to Breakthrough**: Activate your current "Mana Core" trait in the mutations menu (`[`).
+    - If you have enough Essence, you will breakthrough to the next Realm (e.g., Foundation).
+    - If you fail, you will be told how much Essence you need.
+    - **Rewards**: Each Realm grants massive stat buffs, speed increases, mana regen, and resistance bonuses.
+
+### 4. Progression Tiers
+1.  **Mortal**: The beginning.
+2.  **Foundation** (Cost: 10,000 Essence): Your journey begins. Stats start to rise.
+3.  **Lord** (Cost: 100,000 Essence): You command respect. Sustained power.
+4.  **Monarch** (Cost: 1,000,000 Essence): You rule your spirit. Massive speed/stat boost.
+5.  **Heavenly** (Cost: 10,000,000 Essence): You touch the sky. Flight (thematic).
+6.  **Immortal** (Cost: 100,000,000 Essence): Time has no hold. Near invincibility.
+7.  **Ascended** (Cost: 1 Billion Essence)
+8.  **Eternal** (Cost: 10 Billion Essence)
+
+## Features & Mechanics
+- **Path Techniques**: Each path comes with 2 combat spells (a Branch and a Fruit technique) that scale with your power.
+- **Mana Regeneration**: Higher realms drastically increase your mana regeneration.
+- **Impurities (Planned)**: Overusing certain items or failing breakthroughs may crack your core.
+
+## Credits
+Based on the original *Mana Cores* mod. Expanded significantly with the *Infinite Realm* cultivation system.

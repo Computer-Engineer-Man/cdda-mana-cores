@@ -1,0 +1,26 @@
+[
+    {
+        "type": "profession",
+        "id": "prof_cultivator",
+        "name": "Cultivator",
+        "description": "You have just begun your journey on the path of cultivation. You have a Mortal Core and must choose a Path.",
+        "points": 0,
+        "traits": [
+            "MANACORE1"
+        ],
+        "items": {
+            "both": [
+                "jeans",
+                "tshirt",
+                "sneakers"
+            ],
+            "male": [
+                "boxer_shorts"
+            ],
+            "female": [
+                "bra",
+                "panties"
+            ]
+        }
+    }
+]
