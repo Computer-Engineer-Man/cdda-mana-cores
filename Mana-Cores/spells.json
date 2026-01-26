@@ -7,10 +7,14 @@
 		"valid_targets": "self",
 		"effect": "effect_on_condition",
 		"shape": "blast",
-		"flags": [ "NO_PROJECTILE", "NO_HANDS", "NO_LEGS", "SILENT" ],
+		"flags": [
+			"NO_PROJECTILE",
+			"NO_HANDS",
+			"NO_LEGS",
+			"SILENT"
+		],
 		"effect_str": "GENERATE_MANA_EOC"
 	},
-	
 	{
 		"id": "purge_impurities",
 		"type": "SPELL",
@@ -19,7 +23,207 @@
 		"valid_targets": "self",
 		"effect": "effect_on_condition",
 		"shape": "blast",
-		"flags": [ "NO_PROJECTILE", "NO_HANDS", "NO_LEGS", "SILENT" ],
+		"flags": [
+			"NO_PROJECTILE",
+			"NO_HANDS",
+			"NO_LEGS",
+			"SILENT"
+		],
 		"effect_str": "PURGE_IMPURITIES"
+	},
+	{
+		"id": "cultivate_essence",
+		"type": "SPELL",
+		"name": "Cultivate Essence",
+		"description": "Spend time cycling ambient essence into your core. Takes 1 hour.",
+		"valid_targets": "self",
+		"effect": "effect_on_condition",
+		"shape": "blast",
+		"flags": [
+			"NO_PROJECTILE",
+			"NO_HANDS",
+			"NO_LEGS",
+			"SILENT",
+			"CONCENTRATE"
+		],
+		"base_casting_time": 360000,
+		"effect_str": "CULTIVATE_ESSENCE_EOC"
+	},
+	{
+		"id": "consume_essence_ordinary",
+		"type": "SPELL",
+		"name": "Consume Essence (Ordinary)",
+		"description": "Consume an ordinary essence crystal.",
+		"valid_targets": "self",
+		"effect": "effect_on_condition",
+		"shape": "blast",
+		"flags": [
+			"NO_PROJECTILE",
+			"NO_HANDS",
+			"NO_LEGS",
+			"SILENT"
+		],
+		"effect_str": "CONSUME_ESSENCE_ORDINARY_EOC"
+	},
+	{
+		"id": "consume_essence_greater",
+		"type": "SPELL",
+		"name": "Consume Essence (Greater)",
+		"description": "Consume a greater essence crystal.",
+		"valid_targets": "self",
+		"effect": "effect_on_condition",
+		"shape": "blast",
+		"flags": [
+			"NO_PROJECTILE",
+			"NO_HANDS",
+			"NO_LEGS",
+			"SILENT"
+		],
+		"effect_str": "CONSUME_ESSENCE_GREATER_EOC"
+	},
+	{
+		"id": "consume_essence_celestial",
+		"type": "SPELL",
+		"name": "Consume Essence (Celestial)",
+		"description": "Consume a celestial essence crystal.",
+		"valid_targets": "self",
+		"effect": "effect_on_condition",
+		"shape": "blast",
+		"flags": [
+			"NO_PROJECTILE",
+			"NO_HANDS",
+			"NO_LEGS",
+			"SILENT"
+		],
+		"effect_str": "CONSUME_ESSENCE_CELESTIAL_EOC"
+	},
+	{
+		"id": "consume_essence_immortal",
+		"type": "SPELL",
+		"name": "Consume Essence (Immortal)",
+		"description": "Consume an immortal essence crystal.",
+		"valid_targets": "self",
+		"effect": "effect_on_condition",
+		"shape": "blast",
+		"flags": [
+			"NO_PROJECTILE",
+			"NO_HANDS",
+			"NO_LEGS",
+			"SILENT"
+		],
+		"effect_str": "CONSUME_ESSENCE_IMMORTAL_EOC"
+	},
+	{
+		"id": "thunder_flash_step",
+		"type": "SPELL",
+		"name": "Flash Step Strike",
+		"description": "Teleport to a target and strike with the force of thunder.",
+		"valid_targets": "hostile",
+		"effect": "attack",
+		"shape": "blast",
+		"flags": [
+			"NO_PROJECTILE",
+			"SILENT"
+		],
+		"min_range": 15,
+		"max_range": 15,
+		"min_damage": 50,
+		"max_damage": 500,
+		"damage_increment": 45,
+		"damage_type": "electric"
+	},
+	{
+		"id": "thunder_storm_god",
+		"type": "SPELL",
+		"name": "Storm God's Descent",
+		"description": "Transform into living lightning.",
+		"valid_targets": "self",
+		"effect": "effect_on_condition",
+		"shape": "blast",
+		"flags": [
+			"NO_PROJECTILE",
+			"SILENT"
+		],
+		"effect_str": "STORM_GOD_EOC"
+	},
+	{
+		"id": "scorch_dragon_breath",
+		"type": "SPELL",
+		"name": "Dragon's Exhalation",
+		"description": "Exhale a cone of devastating fire.",
+		"valid_targets": "hostile",
+		"effect": "attack",
+		"shape": "cone",
+		"flags": [
+			"NO_PROJECTILE",
+			"SILENT"
+		],
+		"min_range": 5,
+		"max_range": 20,
+		"min_aoe": 30,
+		"max_aoe": 60,
+		"min_damage": 30,
+		"max_damage": 300,
+		"damage_increment": 27,
+		"damage_type": "heat"
+	},
+	{
+		"id": "scorch_second_sun",
+		"type": "SPELL",
+		"name": "The Second Sun",
+		"description": "Summon a massive sun to incinerate an area.",
+		"valid_targets": "ground",
+		"effect": "attack",
+		"shape": "blast",
+		"flags": [
+			"NO_PROJECTILE",
+			"SILENT"
+		],
+		"min_range": 20,
+		"max_range": 40,
+		"min_aoe": 5,
+		"max_aoe": 20,
+		"min_damage": 100,
+		"max_damage": 1000,
+		"damage_increment": 90,
+		"damage_type": "heat"
+	},
+	{
+		"id": "final_end_twilight_cut",
+		"type": "SPELL",
+		"name": "Twilight Cutting Flicker",
+		"description": "A cut that severs reality.",
+		"valid_targets": "hostile",
+		"effect": "attack",
+		"shape": "line",
+		"flags": [
+			"NO_PROJECTILE",
+			"SILENT"
+		],
+		"min_range": 10,
+		"max_range": 30,
+		"min_damage": 100,
+		"max_damage": 1000,
+		"damage_increment": 90,
+		"damage_type": "pure"
+	},
+	{
+		"id": "final_end_erasure",
+		"type": "SPELL",
+		"name": "Final End",
+		"description": "Erase the target from existence.",
+		"valid_targets": "hostile",
+		"effect": "attack",
+		"shape": "blast",
+		"flags": [
+			"NO_PROJECTILE",
+			"SILENT"
+		],
+		"min_range": 20,
+		"max_range": 20,
+		"min_damage": 500,
+		"max_damage": 5000,
+		"damage_increment": 450,
+		"damage_type": "pure"
 	}
 ]

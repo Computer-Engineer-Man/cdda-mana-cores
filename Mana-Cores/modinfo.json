@@ -1,11 +1,15 @@
 [
-  {
-    "type": "MOD_INFO",
-    "id": "manacores",
-    "name": "Mana Cores",
-    "authors": [ "Computer Engineer Man" ],
-    "description": "Adds a way to increase your magical power through breakthroughs by activating your mana core. (Recommended Magiclysm but not needed)",
-    "category": "content",
-    "dependencies": [ "dda" ]
-  }
+    {
+        "type": "MOD_INFO",
+        "id": "manacores",
+        "name": "Mana Cores",
+        "authors": [
+            "Computer Engineer Man"
+        ],
+        "description": "Adds a way to increase your magical power through breakthroughs by activating your mana core. (Recommended Magiclysm but not needed)",
+        "category": "content",
+        "dependencies": [
+            "dda"
+        ]
+    }
 ]

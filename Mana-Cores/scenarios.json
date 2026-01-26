@@ -1,0 +1,17 @@
+[
+    {
+        "type": "scenario",
+        "id": "scenario_cultivator_awakening",
+        "name": "Cultivator's Awakening",
+        "points": 0,
+        "description": "You have awakened to the essence of the world. The path to immortality lies before you.",
+        "allowed_locs": [
+            "sloc_field",
+            "sloc_shelter"
+        ],
+        "start_name": "Wilderness",
+        "flags": [
+            "LONE_START"
+        ]
+    }
+]

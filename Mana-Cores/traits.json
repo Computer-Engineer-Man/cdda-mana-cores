@@ -1,212 +1,342 @@
 [
-	{
-		"type": "mutation",
-		"id": "MANACORE1",
-		"name": "Mana Core - Red",
-		"points": 1,
-		"description": "Red Mana Cores are the most common Mana Core. Gives no benefits when learning the arcane arts.",
-		"valid": false,
-		"purifiable": false,
-		"player_display": true,
-		"active": true,
-		"enchantments": [ "MANACORE1_BUFF" ],
-		"spells_learned": [ [ "generate_mana", 1 ] ],
-		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
-	},
-	
-	{
-		"type": "mutation",
-		"id": "MANACORE1CRACKED",
-		"name": "Mana Core - Cracked Red",
-		"points": 1,
-		"description": "A Cracked Mana Core that has shattered under immense impurities.",
-		"valid": false,
-		"purifiable": false,
-		"player_display": true,
-		"enchantments": [ "CRACKED_MANACORE1_BUFF" ]
-	},
-	
-	{
-		"type": "mutation",
-		"id": "MANACORE2",
-		"name": "Mana Core - Orange",
-		"points": 2,
-		"description": "Orange Mana Cores give slight benefits in regards to the arcane arts.",
-		"valid": false,
-		"purifiable": false,
-		"player_display": true,
-		"active": true,
-		"enchantments": [ "MANACORE2_BUFF" ],
-		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
-	},
-	
-	{
-		"type": "mutation",
-		"id": "MANACORE2CRACKED",
-		"name": "Mana Core - Cracked Orange",
-		"points": 2,
-		"description": "A Cracked Mana Core that has shattered under immense impurities.",
-		"valid": false,
-		"purifiable": false,
-		"player_display": true,
-		"enchantments": [ "CRACKED_MANACORE2_BUFF" ]
-	},
-	
-	{
-		"type": "mutation",
-		"id": "MANACORE3",
-		"name": "Mana Core - Yellow",
-		"points": 4,
-		"description": "Yellow Mana Cores allow for greater control over mana as well as allowing more storage than normal mages.",
-		"valid": false,
-		"purifiable": false,
-		"player_display": true,
-		"active": true,
-		"enchantments": [ "MANACORE3_BUFF" ],
-		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
-	},
-	
-	{
-		"type": "mutation",
-		"id": "MANACORE3CRACKED",
-		"name": "Mana Core - Cracked Yellow",
-		"points": 4,
-		"description": "A Cracked Mana Core that has shattered under immense impurities.",
-		"valid": false,
-		"purifiable": false,
-		"player_display": true,
-		"enchantments": [ "CRACKED_MANACORE3_BUFF" ]
-	},
-	
-	{
-		"type": "mutation",
-		"id": "MANACORE4",
-		"name": "Mana Core - Green",
-		"points": 6,
-		"description": "Green Mana Cores enable the ability to control their abilities to a degree that is a magnitude up from the previous cores.",
-		"valid": false,
-		"purifiable": false,
-		"player_display": true,
-		"active": true,
-		"enchantments": [ "MANACORE4_BUFF" ],
-		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
-	},
-	
-	{
-		"type": "mutation",
-		"id": "MANACORE4CRACKED",
-		"name": "Mana Core - Cracked Green",
-		"points": 6,
-		"description": "A Cracked Mana Core that has shattered under immense impurities.",
-		"valid": false,
-		"purifiable": false,
-		"player_display": true,
-		"enchantments": [ "CRACKED_MANACORE4_BUFF" ]
-	},
-	
-	{
-		"type": "mutation",
-		"id": "MANACORE5",
-		"name": "Mana Core - Cyan",
-		"points": 8,
-		"description": "Cyan Mana Cores have their existing abilities enhanced. Many successful mages have such a core.",
-		"valid": false,
-		"purifiable": false,
-		"player_display": true,
-		"active": true,
-		"flags": [ "SILENT_SPELL" ],
-		"enchantments": [ "MANACORE5_BUFF" ],
-		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
-	},
-	
-	{
-		"type": "mutation",
-		"id": "MANACORE5CRACKED",
-		"name": "Mana Core - Cracked Cyan",
-		"points": 8,
-		"description": "A Cracked Mana Core that has shattered under immense impurities.",
-		"valid": false,
-		"purifiable": false,
-		"player_display": true,
-		"enchantments": [ "CRACKED_MANACORE5_BUFF" ]
-	},
-	
-	{
-		"type": "mutation",
-		"id": "MANACORE6",
-		"name": "Mana Core - Blue",
-		"points": 10,
-		"description": "Blue Mana Cores are those that the majority of great mages have. A major upgrade that sets them apart is the fine control of their abilities.",
-		"valid": false,
-		"purifiable": false,
-		"player_display": true,
-		"active": true,
-		"flags": [ "SILENT_SPELL" ],
-		"enchantments": [ "MANACORE6_BUFF" ],
-		"activated_eocs": [ "BEGIN_BREAKTHROUGH" ]
-	},
-	
-	{
-		"type": "mutation",
-		"id": "MANACORE6CRACKED",
-		"name": "Mana Core - Cracked Blue",
-		"points": 10,
-		"description": "A Cracked Mana Core that has shattered under immense impurities.",
-		"valid": false,
-		"purifiable": false,
-		"player_display": true,
-		"enchantments": [ "CRACKED_MANACORE6_BUFF" ]
-	},
-	
-	{
-		"type": "mutation",
-		"id": "MANACORE7",
-		"name": "Mana Core - Purple",
-		"points": 16,
-		"description": "Purple Mana Cores are those that Archmages and Sages have. Their abilities are far greater than the previous core. Considered the limit by the Magic World.",
-		"valid": false,
-		"purifiable": false,
-		"player_display": true,
-		"active": true,
-		"flags": [ "SILENT_SPELL", "SUBTLE_SPELL" ],
-		"enchantments": [ "MANACORE7_BUFF" ],
-		"activated_eocs": [ "ATTEMPT_FINAL_BREAKTHROUGH" ]
-	},
-	
-	{
-		"type": "mutation",
-		"id": "MANACORE7CRACKED",
-		"name": "Mana Core - Cracked Purple",
-		"points": 16,
-		"description": "A Cracked Mana Core that has shattered under immense impurities.",
-		"valid": false,
-		"purifiable": false,
-		"player_display": true,
-		"enchantments": [ "CRACKED_MANACORE7_BUFF" ]
-	},
-	
-	{
-		"type": "mutation",
-		"id": "MANACORE8",
-		"name": "Mana Core - White",
-		"points": 20,
-		"description": "White Mana Cores are the stuff of legends. Only mythical beings have such a core and the countless benefits such a core grants.",
-		"valid": false,
-		"purifiable": false,
-		"player_display": true,
-                "flags": [ "SILENT_SPELL", "SUBTLE_SPELL" ],
-		"enchantments": [ "MANACORE8_BUFF" ]
-	},
-	
-	{
-		"type": "mutation",
-		"id": "MANACORE8CRACKED",
-		"name": "Mana Core - Cracked White",
-		"points": 20,
-		"description": "A Cracked Mana Core that has shattered under immense impurities.",
-		"valid": false,
-		"purifiable": false,
-		"player_display": true,
-		"enchantments": [ "CRACKED_MANACORE8_BUFF" ]
-	}
+    {
+        "type": "mutation",
+        "id": "MANACORE1",
+        "name": "Mana Core - Mortal",
+        "points": 1,
+        "description": "The first step on the path of cultivation. You have formed a Mortal Core.",
+        "valid": false,
+        "purifiable": false,
+        "player_display": true,
+        "active": true,
+        "enchantments": [
+            "MANACORE1_BUFF"
+        ],
+        "spells_learned": [
+            [
+                "generate_mana",
+                1
+            ]
+        ],
+        "activated_eocs": [
+            "BEGIN_BREAKTHROUGH"
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "MANACORE1CRACKED",
+        "name": "Mana Core - Cracked Red",
+        "points": 1,
+        "description": "A Cracked Mana Core that has shattered under immense impurities.",
+        "valid": false,
+        "purifiable": false,
+        "player_display": true,
+        "enchantments": [
+            "CRACKED_MANACORE1_BUFF"
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "MANACORE2",
+        "name": "Mana Core - Foundation",
+        "points": 2,
+        "description": "You have built your Foundation. Your core is stable and ready for growth.",
+        "valid": false,
+        "purifiable": false,
+        "player_display": true,
+        "active": true,
+        "enchantments": [
+            "MANACORE2_BUFF"
+        ],
+        "activated_eocs": [
+            "BEGIN_BREAKTHROUGH"
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "MANACORE2CRACKED",
+        "name": "Mana Core - Cracked Orange",
+        "points": 2,
+        "description": "A Cracked Mana Core that has shattered under immense impurities.",
+        "valid": false,
+        "purifiable": false,
+        "player_display": true,
+        "enchantments": [
+            "CRACKED_MANACORE2_BUFF"
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "MANACORE3",
+        "name": "Mana Core - Lord",
+        "points": 4,
+        "description": "You have advanced to the Lord Realm. Your power commands respect.",
+        "valid": false,
+        "purifiable": false,
+        "player_display": true,
+        "active": true,
+        "enchantments": [
+            "MANACORE3_BUFF"
+        ],
+        "activated_eocs": [
+            "BEGIN_BREAKTHROUGH"
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "MANACORE3CRACKED",
+        "name": "Mana Core - Cracked Yellow",
+        "points": 4,
+        "description": "A Cracked Mana Core that has shattered under immense impurities.",
+        "valid": false,
+        "purifiable": false,
+        "player_display": true,
+        "enchantments": [
+            "CRACKED_MANACORE3_BUFF"
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "MANACORE4",
+        "name": "Mana Core - Monarch",
+        "points": 6,
+        "description": "You rule over your own spirit. The Monarch Realm grants immense power.",
+        "valid": false,
+        "purifiable": false,
+        "player_display": true,
+        "active": true,
+        "enchantments": [
+            "MANACORE4_BUFF"
+        ],
+        "activated_eocs": [
+            "BEGIN_BREAKTHROUGH"
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "MANACORE4CRACKED",
+        "name": "Mana Core - Cracked Green",
+        "points": 6,
+        "description": "A Cracked Mana Core that has shattered under immense impurities.",
+        "valid": false,
+        "purifiable": false,
+        "player_display": true,
+        "enchantments": [
+            "CRACKED_MANACORE4_BUFF"
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "MANACORE5",
+        "name": "Mana Core - Heavenly",
+        "points": 8,
+        "description": "You have touched the heavens. Your core resonates with the sky.",
+        "valid": false,
+        "purifiable": false,
+        "player_display": true,
+        "active": true,
+        "flags": [
+            "SILENT_SPELL"
+        ],
+        "enchantments": [
+            "MANACORE5_BUFF"
+        ],
+        "activated_eocs": [
+            "BEGIN_BREAKTHROUGH"
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "MANACORE5CRACKED",
+        "name": "Mana Core - Cracked Cyan",
+        "points": 8,
+        "description": "A Cracked Mana Core that has shattered under immense impurities.",
+        "valid": false,
+        "purifiable": false,
+        "player_display": true,
+        "enchantments": [
+            "CRACKED_MANACORE5_BUFF"
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "MANACORE6",
+        "name": "Mana Core - Immortal",
+        "points": 10,
+        "description": "You have transcended mortality. The Immortal Realm beckons.",
+        "valid": false,
+        "purifiable": false,
+        "player_display": true,
+        "active": true,
+        "flags": [
+            "SILENT_SPELL"
+        ],
+        "enchantments": [
+            "MANACORE6_BUFF"
+        ],
+        "activated_eocs": [
+            "BEGIN_BREAKTHROUGH"
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "MANACORE6CRACKED",
+        "name": "Mana Core - Cracked Blue",
+        "points": 10,
+        "description": "A Cracked Mana Core that has shattered under immense impurities.",
+        "valid": false,
+        "purifiable": false,
+        "player_display": true,
+        "enchantments": [
+            "CRACKED_MANACORE6_BUFF"
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "MANACORE7",
+        "name": "Mana Core - Ascended",
+        "points": 16,
+        "description": "You have ascended beyond the mundane world.",
+        "valid": false,
+        "purifiable": false,
+        "player_display": true,
+        "active": true,
+        "flags": [
+            "SILENT_SPELL",
+            "SUBTLE_SPELL"
+        ],
+        "enchantments": [
+            "MANACORE7_BUFF"
+        ],
+        "activated_eocs": [
+            "ATTEMPT_FINAL_BREAKTHROUGH"
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "MANACORE7CRACKED",
+        "name": "Mana Core - Cracked Purple",
+        "points": 16,
+        "description": "A Cracked Mana Core that has shattered under immense impurities.",
+        "valid": false,
+        "purifiable": false,
+        "player_display": true,
+        "enchantments": [
+            "CRACKED_MANACORE7_BUFF"
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "MANACORE8",
+        "name": "Mana Core - Eternal",
+        "points": 20,
+        "description": "Your core is eternal. You are one with the Framework.",
+        "valid": false,
+        "purifiable": false,
+        "player_display": true,
+        "flags": [
+            "SILENT_SPELL",
+            "SUBTLE_SPELL"
+        ],
+        "enchantments": [
+            "MANACORE8_BUFF"
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "MANACORE8CRACKED",
+        "name": "Mana Core - Cracked White",
+        "points": 20,
+        "description": "A Cracked Mana Core that has shattered under immense impurities.",
+        "valid": false,
+        "purifiable": false,
+        "player_display": true,
+        "enchantments": [
+            "CRACKED_MANACORE8_BUFF"
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "PATH_THUNDER",
+        "name": "Path of the Thundering Limb",
+        "points": 0,
+        "description": "You follow the Path of the Thundering Limb. Speed is weight. The body is the hammer.",
+        "valid": true,
+        "purifiable": false,
+        "player_display": true,
+        "starting_trait": true,
+        "enchantments": [
+            "THUNDER_BASE"
+        ],
+        "spells_learned": [
+            [
+                "thunder_flash_step",
+                1
+            ],
+            [
+                "thunder_storm_god",
+                1
+            ],
+            [
+                "cultivate_essence",
+                1
+            ]
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "PATH_SCORCH",
+        "name": "Path of the Scorched Breath",
+        "points": 0,
+        "description": "You follow the Path of the Scorched Breath. Exhale disaster. Inhale the ashes.",
+        "valid": true,
+        "purifiable": false,
+        "player_display": true,
+        "starting_trait": true,
+        "enchantments": [
+            "SCORCH_BASE"
+        ],
+        "spells_learned": [
+            [
+                "scorch_dragon_breath",
+                1
+            ],
+            [
+                "scorch_second_sun",
+                1
+            ],
+            [
+                "cultivate_essence",
+                1
+            ]
+        ]
+    },
+    {
+        "type": "mutation",
+        "id": "PATH_FINAL_END",
+        "name": "Path of the Final End",
+        "points": 0,
+        "description": "You follow the Path of the Final End. All things must end. You are the usher.",
+        "valid": true,
+        "purifiable": false,
+        "player_display": true,
+        "starting_trait": true,
+        "enchantments": [
+            "FINAL_END_BASE"
+        ],
+        "spells_learned": [
+            [
+                "final_end_twilight_cut",
+                1
+            ],
+            [
+                "final_end_erasure",
+                1
+            ],
+            [
+                "cultivate_essence",
+                1
+            ]
+        ]
+    }
 ]

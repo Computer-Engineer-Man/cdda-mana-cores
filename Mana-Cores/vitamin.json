@@ -1,12 +1,26 @@
 [
-	{
-	"id": "impurities",
-	"type": "vitamin",
-	"vit_type": "counter",
-	"name": "Impurities",
-	"rate": "15 m",
-	"min": 0,
-	"max": 50000,
-	"flags": [ "NO_DISPLAY" ]
-	}
+    {
+        "id": "impurities",
+        "type": "vitamin",
+        "vit_type": "counter",
+        "name": "Impurities",
+        "rate": "15 m",
+        "min": 0,
+        "max": 50000,
+        "flags": [
+            "NO_DISPLAY"
+        ]
+    },
+    {
+        "id": "essence",
+        "type": "vitamin",
+        "vit_type": "counter",
+        "name": "Essence",
+        "rate": "0 m",
+        "min": 0,
+        "max": 2000000000,
+        "flags": [
+            "NO_DISPLAY"
+        ]
+    }
 ]

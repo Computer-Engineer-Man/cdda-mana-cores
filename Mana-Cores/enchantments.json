@@ -3,134 +3,384 @@
 		"type": "enchantment",
 		"id": "MANACORE1_BUFF",
 		"values": [
-			{ "value": "LEARNING_FOCUS", "multiply": 0.02 }
+			{
+				"value": "LEARNING_FOCUS",
+				"multiply": 0.05
+			},
+			{
+				"value": "MAX_MANA",
+				"multiply": 0.05
+			}
 		]
 	},
-	
 	{
 		"type": "enchantment",
 		"id": "CRACKED_MANACORE1_BUFF",
 		"values": [
-			{ "value": "MAX_MANA", "multiply": -0.5 }
+			{
+				"value": "MAX_MANA",
+				"multiply": -0.5
+			}
 		]
 	},
-	
 	{
 		"type": "enchantment",
 		"id": "MANACORE2_BUFF",
 		"values": [
-			{ "value": "LEARNING_FOCUS", "multiply": 0.1 },
-			{ "value": "MAX_MANA", "multiply": 0.1 }
+			{
+				"value": "STRENGTH",
+				"add": 1
+			},
+			{
+				"value": "DEXTERITY",
+				"add": 1
+			},
+			{
+				"value": "INTELLIGENCE",
+				"add": 1
+			},
+			{
+				"value": "PERCEPTION",
+				"add": 1
+			},
+			{
+				"value": "LEARNING_FOCUS",
+				"multiply": 0.1
+			},
+			{
+				"value": "MAX_MANA",
+				"multiply": 0.15
+			}
 		]
 	},
-	
 	{
 		"type": "enchantment",
 		"id": "CRACKED_MANACORE2_BUFF",
 		"values": [
-			{ "value": "MAX_MANA", "multiply": -0.45 }
+			{
+				"value": "MAX_MANA",
+				"multiply": -0.45
+			}
 		]
 	},
-	
 	{
 		"type": "enchantment",
 		"id": "MANACORE3_BUFF",
 		"values": [
-			{ "value": "LEARNING_FOCUS", "multiply": 0.25 },
-			{ "value": "MAX_MANA", "multiply": 0.25 }
+			{
+				"value": "STRENGTH",
+				"add": 2
+			},
+			{
+				"value": "DEXTERITY",
+				"add": 2
+			},
+			{
+				"value": "INTELLIGENCE",
+				"add": 2
+			},
+			{
+				"value": "PERCEPTION",
+				"add": 2
+			},
+			{
+				"value": "SPEED",
+				"multiply": 0.05
+			},
+			{
+				"value": "LEARNING_FOCUS",
+				"multiply": 0.2
+			},
+			{
+				"value": "MAX_MANA",
+				"multiply": 0.3
+			}
 		]
 	},
-	
 	{
 		"type": "enchantment",
 		"id": "CRACKED_MANACORE3_BUFF",
 		"values": [
-			{ "value": "MAX_MANA", "multiply": -0.375 }
+			{
+				"value": "MAX_MANA",
+				"multiply": -0.375
+			}
 		]
 	},
-	
 	{
 		"type": "enchantment",
 		"id": "MANACORE4_BUFF",
 		"values": [
-			{ "value": "LEARNING_FOCUS", "multiply": 0.5 },
-			{ "value": "MAX_MANA", "multiply": 0.4 }
+			{
+				"value": "STRENGTH",
+				"add": 20
+			},
+			{
+				"value": "DEXTERITY",
+				"add": 20
+			},
+			{
+				"value": "INTELLIGENCE",
+				"add": 20
+			},
+			{
+				"value": "PERCEPTION",
+				"add": 20
+			},
+			{
+				"value": "SPEED",
+				"multiply": 0.5
+			},
+			{
+				"value": "LEARNING_FOCUS",
+				"multiply": 0.5
+			},
+			{
+				"value": "MAX_MANA",
+				"multiply": 1.0
+			}
 		]
 	},
-	
 	{
 		"type": "enchantment",
 		"id": "CRACKED_MANACORE4_BUFF",
 		"values": [
-			{ "value": "MAX_MANA", "multiply": -0.3 }
+			{
+				"value": "MAX_MANA",
+				"multiply": -0.3
+			}
 		]
 	},
-	
 	{
 		"type": "enchantment",
 		"id": "MANACORE5_BUFF",
 		"values": [
-			{ "value": "LEARNING_FOCUS", "multiply": 0.8 },
-			{ "value": "MAX_MANA", "multiply": 0.65 }
+			{
+				"value": "STRENGTH",
+				"add": 50
+			},
+			{
+				"value": "DEXTERITY",
+				"add": 50
+			},
+			{
+				"value": "INTELLIGENCE",
+				"add": 50
+			},
+			{
+				"value": "PERCEPTION",
+				"add": 50
+			},
+			{
+				"value": "SPEED",
+				"multiply": 1.0
+			},
+			{
+				"value": "LEARNING_FOCUS",
+				"multiply": 1.0
+			},
+			{
+				"value": "MAX_MANA",
+				"multiply": 2.0
+			}
 		]
 	},
-	
 	{
 		"type": "enchantment",
 		"id": "CRACKED_MANACORE5_BUFF",
 		"values": [
-			{ "value": "MAX_MANA", "multiply": -0.175 }
+			{
+				"value": "MAX_MANA",
+				"multiply": -0.175
+			}
 		]
 	},
-	
 	{
 		"type": "enchantment",
 		"id": "MANACORE6_BUFF",
 		"values": [
-			{ "value": "LEARNING_FOCUS", "multiply": 1.1 },
-			{ "value": "MAX_MANA", "multiply": 1 }
+			{
+				"value": "STRENGTH",
+				"add": 100
+			},
+			{
+				"value": "DEXTERITY",
+				"add": 100
+			},
+			{
+				"value": "INTELLIGENCE",
+				"add": 100
+			},
+			{
+				"value": "PERCEPTION",
+				"add": 100
+			},
+			{
+				"value": "SPEED",
+				"multiply": 2.0
+			},
+			{
+				"value": "LEARNING_FOCUS",
+				"multiply": 2.0
+			},
+			{
+				"value": "MAX_MANA",
+				"multiply": 5.0
+			}
 		]
 	},
-	
 	{
 		"type": "enchantment",
 		"id": "CRACKED_MANACORE6_BUFF",
 		"values": [
-			{ "value": "MAX_MANA", "multiply": 0 }
+			{
+				"value": "MAX_MANA",
+				"multiply": 0
+			}
 		]
 	},
-	
 	{
 		"type": "enchantment",
 		"id": "MANACORE7_BUFF",
 		"values": [
-			{ "value": "LEARNING_FOCUS", "multiply": 2 },
-			{ "value": "MAX_MANA", "multiply": 3 }
+			{
+				"value": "STRENGTH",
+				"add": 500
+			},
+			{
+				"value": "DEXTERITY",
+				"add": 500
+			},
+			{
+				"value": "INTELLIGENCE",
+				"add": 500
+			},
+			{
+				"value": "PERCEPTION",
+				"add": 500
+			},
+			{
+				"value": "SPEED",
+				"multiply": 5.0
+			},
+			{
+				"value": "LEARNING_FOCUS",
+				"multiply": 5.0
+			},
+			{
+				"value": "MAX_MANA",
+				"multiply": 10.0
+			}
 		]
 	},
-	
 	{
 		"type": "enchantment",
 		"id": "CRACKED_MANACORE7_BUFF",
 		"values": [
-			{ "value": "MAX_MANA", "multiply": 1 }
+			{
+				"value": "MAX_MANA",
+				"multiply": 1
+			}
 		]
 	},
-	
 	{
 		"type": "enchantment",
 		"id": "MANACORE8_BUFF",
 		"values": [
-			{ "value": "LEARNING_FOCUS", "multiply": 4 },
-			{ "value": "MAX_MANA", "multiply": 7 }
+			{
+				"value": "STRENGTH",
+				"add": 1000
+			},
+			{
+				"value": "DEXTERITY",
+				"add": 1000
+			},
+			{
+				"value": "INTELLIGENCE",
+				"add": 1000
+			},
+			{
+				"value": "PERCEPTION",
+				"add": 1000
+			},
+			{
+				"value": "SPEED",
+				"multiply": 10.0
+			},
+			{
+				"value": "LEARNING_FOCUS",
+				"multiply": 10.0
+			},
+			{
+				"value": "MAX_MANA",
+				"multiply": 100.0
+			}
 		]
 	},
-	
 	{
 		"type": "enchantment",
 		"id": "CRACKED_MANACORE8_BUFF",
 		"values": [
-			{ "value": "MAX_MANA", "multiply": 3 }
+			{
+				"value": "MAX_MANA",
+				"multiply": 3
+			}
+		]
+	},
+	{
+		"type": "enchantment",
+		"id": "THUNDER_BASE",
+		"values": [
+			{
+				"value": "SPEED",
+				"multiply": 0.2
+			},
+			{
+				"value": "DEXTERITY",
+				"add": 2
+			}
+		]
+	},
+	{
+		"type": "enchantment",
+		"id": "SCORCH_BASE",
+		"values": [
+			{
+				"value": "INTELLIGENCE",
+				"add": 2
+			}
+		]
+	},
+	{
+		"type": "enchantment",
+		"id": "FINAL_END_BASE",
+		"values": [
+			{
+				"value": "LEARNING_FOCUS",
+				"multiply": 0.5
+			},
+			{
+				"value": "STRENGTH",
+				"add": 2
+			},
+			{
+				"value": "PERCEPTION",
+				"add": 2
+			}
+		]
+	},
+	{
+		"type": "enchantment",
+		"id": "STORM_GOD_BUFF",
+		"values": [
+			{
+				"value": "SPEED",
+				"multiply": 1.0
+			},
+			{
+				"value": "DEXTERITY",
+				"add": 10
+			}
 		]
 	}
 ]
